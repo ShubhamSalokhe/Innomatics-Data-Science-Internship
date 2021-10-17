@@ -32,7 +32,6 @@ def missing_and_duplicates_list(list):
     print('Missing and Single Occure Num list: {}'.format(full_list))
     print('original list: {}'.format(list))
 
-# a = [int(num) for num in input("Enter digits: {}",fromat(num)).split()]
-a = [5, 6, 7, 2, 8, 3, 4, 8, 12, 15, 25, 21, 15 ,6]
 
+a = [5, 6, 7, 2, 8, 3, 4, 8, 12, 15, 25, 21, 15 ,6]
 missing_and_duplicates_list(a)
