@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+ShortenURL
+{% endblock %}
+
+
+
+
+{% block content %}
+<h1>Copy shorten URL from this page </h1>
+<body>
+    <br><br><br><br><br><br><br><br><br><br>
+    <center>
+    <form method="POST" action="/short">
+        <input type='text' name='surl' value={{short}}><br>
+<br><br>
+<input type="Submit" value="COPY URL"></input>
+    </form>
+</center>
+</body>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+History
+{% endblock %}
+
+{% block content %}
+<br />
+<h1>Welcome to History Page</h1>
+<br />
+<body>
+<center>
+    <p><i>Url Logs</i></p>
+<table border="3" style="border-radius: 16px; border: none;">
+    <tr>
+        <th><center>URL_ID</center></th>
+        <th><center>ORIGINAL_URL</center></th>
+        <th><center>COMPRESSED_URL</center></th>
+    </tr>
+{% for key in data %}
+<tr>
+    <td ><b>{{key[0]}}</b></td>
+    <td ><b>{{key[1]}}</b></td>
+    <td ><b>{{key[2]}}</b></td>
+</tr>
+{%endfor%}
+</table>
+</center>
+</body>
+{% for key in data %}
+
+{{data[key]}} ={{ key }}
+
+{% endfor %}
+{% endblock %}
