@@ -6,22 +6,24 @@ History
 
 {% block content %}
 <br />
-<h1>Welcome to History Page</h1>
+<center>
+<h1>History Page</h1>
+</center>
 <br />
 <body>
 <center>
-    <p><i>Url Logs</i></p>
-<table border="3" style="border-radius: 16px; border: none;">
+    <p style = "font-size: 20px;font-family:'Courier New'">Url's </p>
+<table  style="border-radius: 5px; border: none;">
     <tr>
-        <th><center>URL_ID</center></th>
-        <th><center>ORIGINAL_URL</center></th>
-        <th><center>COMPRESSED_URL</center></th>
+        <th style="font-family:'Courier New'; border: solid; color:#2f4429; background-color: #4e8170; color:#020202;"><center>URL_ID</center></th>
+        <th style="font-family:'Courier New'; border: solid; color:#e1eedd; background-color: #4e8170; color:#020202;"><center>ORIGINAL_URL</center></th>
+        <th style="font-family:'Courier New'; border: solid; color:#e1eedd; background-color: #4e8170; color:#030303;"><center>COMPRESSED_URL</center></th>
     </tr>
 {% for key in data %}
 <tr>
-    <td ><b>{{key[0]}}</b></td>
-    <td ><b>{{key[1]}}</b></td>
-    <td ><b>{{key[2]}}</b></td>
+    <td style="font-family: Garamond, serif;color:#4e8170; background-color: #c1ccbd; color:#000000;"><center><b>{{key[0]}}</b></td>
+    <td style="font-family: Garamond, serif;color:#4e8170; background-color: #c1ccbd; color:#000000;"><b>{{key[1]}}</b></td>
+    <td style="font-family: Garamond, serif;color:#4e8170; background-color: #c1ccbd; color:#000000;"><b>{{key[2]}}</b></td>
 </tr>
 {%endfor%}
 </table>

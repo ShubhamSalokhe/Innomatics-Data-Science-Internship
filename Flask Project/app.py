@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect
 import pyperclip as pc
-import datetime as dt
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate 
 import os
@@ -41,6 +40,8 @@ def shorten_url():
         if not short_url:
             return rand_letters
 
+
+
 ###############################################Pages##########################################################
 
 @app.route('/')
@@ -49,18 +50,21 @@ def home_get():
 
 @app.route('/', methods =["POST"])
 def home_post():
-    long = request.form.get("in_1") 
-    found_url = Url.query.filter_by(long=long).first()
-    if found_url:
-        for i in db.session.execute("SELECT short FROM urls WHERE long='{}'".format(long)):
-            short =i[0]
-            return render_template("shorten.html" , short=short)
+    long = request.form.get("in_1")
+    if long =="":
+        return render_template("index.html", empty ="Fill with URL")
     else:
-        short = shorten_url()
-        URL = Url(long, short)
-        db.session.add(URL)
-        db.session.commit()
-        return render_template("shorten.html" , short="http://127.0.0.1:5000/"+short)
+        found_url = Url.query.filter_by(long=long).first()
+        if found_url:
+            for i in db.session.execute("SELECT short FROM urls WHERE long='{}'".format(long)):
+                short =i[0]
+                return render_template("shorten.html" , short=short)
+        else:
+            short = shorten_url()
+            URL = Url(long, short)
+            db.session.add(URL)
+            db.session.commit()
+            return render_template("shorten.html" , short="http://127.0.0.1:5000/"+short)
 
 @app.route("/short",methods=["POST"])
 def copyToClipboard():
