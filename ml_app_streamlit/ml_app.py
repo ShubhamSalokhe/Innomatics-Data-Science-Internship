@@ -41,6 +41,8 @@ def preprocess(tweet):
 
 
 def predict(tweet):
+    nltk.download('stopwords')
+    nltk.download('wordnet')
 
     # Loading pretrained CountVectorizer from pickle file
     vectorizer = load(open('pickle/countvectorizer.pkl', 'rb'))
