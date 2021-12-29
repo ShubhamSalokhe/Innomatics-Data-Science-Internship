@@ -20,6 +20,8 @@ if st.sidebar.button('Contact Me'):
     st.write('-------------------------------------------------------')
     st.write(":email: shubhamsalokhe@ymail.com")
     st.write('-------------------------------------------------------')
+    st.write('[GitHub](https://github.com/ShubhamSalokhe/),',' [Linkedin](https://www.linkedin.com/in/shubhamsalokhe/)')
+    st.write('-------------------------------------------------------')
     st.write(':iphone: +91 855297 4448')
     st.write('-------------------------------------------------------')
 
@@ -44,7 +46,11 @@ if st.sidebar.button('Projects'):
     st.success("PROJECTS")
     st.write('-------------------------------------------------------')
     st.subheader('1. Data Science & Machine Learning (06/2020 - Present)')
-    st.text('Stock Market Predictions using LSTM and Decision Tree Algorithm\n-Email-Spam-Classification using Support Vector Machine \n-Exploring_Neighborhoods_in_the_city_of_Toronto\n-Car-Prediction using RandomForestRegressor\n-Exploratory Data Analysis of police dataset')
+    st.markdown('- [Stock Market Predictions using LSTM and Decision Tree Algorithm](https://github.com/ShubhamSalokhe/Stock-Price-Prediction/blob/master/Stock_Market_Prediction_Project%20final%20version.ipynb)',unsafe_allow_html=True)
+    st.markdown('- [Email-Spam-Classification using Support Vector Machine](https://github.com/ShubhamSalokhe/Email-Spam-Classification/blob/main/Email%20spam%20classifier%20.ipynb)',unsafe_allow_html=True) 
+    st.markdown('- [Exploring_Neighborhoods_in_the_city_of_Toronto](https://github.com/ShubhamSalokhe/Exploring_Neighborhoods_in_the_city_of_Toronto)',unsafe_allow_html=True)
+    st.markdown('- [Car-Prediction using RandomForestRegressor](https://github.com/ShubhamSalokhe/Car-Prediction/blob/main/Car%20Prediction.ipynb)',unsafe_allow_html=True)
+    st.markdown('- [Exploratory Data Analysis of police dataset](https://github.com/ShubhamSalokhe/Data_Analysis_Projects/blob/main/Police_Data_Analysis/Police_Data_File.ipynb)',unsafe_allow_html=True)
     st.write('-------------------------------------------------------')
     st.subheader('2. Tool geometry & Vibration analysis of single point cutting tool on Traditional Lathe machine (06/2019 - 04/2020)')
     st.write('-------------------------------------------------------') 
@@ -55,7 +61,12 @@ if st.sidebar.button('iNTERNSHIPS'):
     st.write('-------------------------------------------------------')
     st.markdown('## **Data Science**')
     st.subheader('Innomatics Research Labs (10/2021 - Present,)')
-    st.text('-EDA of Fifa 19 Players data (K means Clustring, Principle Component Analysis )  \n-Descriptive Stats - Both basic and Adv Users\n-Application Development project (URL Shortner)')
+    st.markdown('- [Sentiment analysis of airline tweets app (Streamlit app) deployment on Heroku cloud platform](https://github.com/ShubhamSalokhe/Innomatics-Data-Science-Internship/tree/master/Heroku%20deployment)',unsafe_allow_html=True)
+    st.markdown('- [Sentiment analysis of airline tweets (heroku link)](https://airline-nltk-app.herokuapp.com/)',unsafe_allow_html=True)
+    st.markdown('- [Flask Application Development project (URL Shortner)](https://github.com/ShubhamSalokhe/Innomatics-Data-Science-Internship/tree/master/Flask%20Project)',unsafe_allow_html=True)
+    st.markdown('- [Implementing K-Nearest Neighbor(KNN) Algorithm from scratch Dataset-"Diamond"](https://github.com/ShubhamSalokhe/Innomatics-Data-Science-Internship/blob/master/KNN_from_scratch/knn_from_scratch.ipynb)',unsafe_allow_html=True)
+    st.markdown('- [Descriptive Stats - Both basic and Adv Users](https://github.com/ShubhamSalokhe/Innomatics-Data-Science-Internship/blob/master/Descriptive%20Stats%20-%20Both%20basic%20and%20Adv%20Users/(Descriptive%20Stats%20-%20Both%20basic%20and%20Adv%20Users).ipynb)',unsafe_allow_html=True)
+    st.markdown('- [EDA of Fifa 19 Players data (K means Clustring, Principle Component Analysis)](https://github.com/ShubhamSalokhe/Innomatics-Data-Science-Internship/blob/master/Hackathon/Hackerthon.ipynb)',unsafe_allow_html=True)
     st.write('-------------------------------------------------------')
     
     st.markdown('## **Data Science - ML & DL **')
@@ -93,12 +104,12 @@ if st.sidebar.button('CERTIFICATES'):
     st.success("CERTIFICATES")
 
     st.write('-------------------------------------------------------')
-    st.subheader('Data Science (06/2020 - 02/2021')
-    st.write('*IBM Data Science Professional Certificate-Coursera*')
+    st.subheader('Data Science (06/2020 - 02/2021)')
+    st.write('[*IBM Data Science Professional Certificate-Coursera*](https://www.credly.com/badges/45e29fed-66f1-4d7f-9f64-515bc618add4?source=linked_in_profile)', unsafe_allow_html=True)
     st.write('-------------------------------------------------------')
     
     st.subheader('Machine Learning (06/2020 - 09/2020)')
-    st.write('*Stanford University-Coursera*')
+    st.write('[*Stanford University-Coursera*](https://coursera.org/share/3e1888c14a2b63918f350558b4a6e3f9)', unsafe_allow_html=True)
     st.write('-------------------------------------------------------')
     
     st.subheader('AutoCAD (01/2016 - 02/2016)')
@@ -106,7 +117,7 @@ if st.sidebar.button('CERTIFICATES'):
     st.write('-------------------------------------------------------')
     
     st.subheader('SolidWorks (06/2019 - 07/2019)')
-    st.write('*GD & T ,Modeling and Drafting*')
+    st.write('[*SolidWorks, GD & T ,Modeling and Drafting *](https://www.caddcentre.com/caddVerification.php?ddac=ODA3Njg5)', unsafe_allow_html=True)
     st.write('-------------------------------------------------------')
 
 ################################## LANGUAGES #########################################
