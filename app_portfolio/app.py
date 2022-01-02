@@ -20,10 +20,12 @@ if st.sidebar.button('Contact Me'):
     st.write('-------------------------------------------------------')
     st.write(":email: shubhamsalokhe@ymail.com")
     st.write('-------------------------------------------------------')
-    st.write('[GitHub](https://github.com/ShubhamSalokhe/),',' [Linkedin](https://www.linkedin.com/in/shubhamsalokhe/)')
-    st.write('-------------------------------------------------------')
     st.write(':iphone: +91 855297 4448')
     st.write('-------------------------------------------------------')
+    st.write('🐻[GitHub](https://github.com/ShubhamSalokhe/)','[Linkedin](https://www.linkedin.com/in/shubhamsalokhe/)')
+    st.write('-------------------------------------------------------')
+
+
 
 
 #########################   Education ##########################
@@ -42,7 +44,7 @@ if st.sidebar.button('EDUCATION'):
 
 #########################   Projects ##########################
 
-if st.sidebar.button('Projects'):
+if st.sidebar.button('PROJECT'):
     st.success("PROJECTS")
     st.write('-------------------------------------------------------')
     st.subheader('1. Data Science & Machine Learning (06/2020 - Present)')
@@ -56,7 +58,7 @@ if st.sidebar.button('Projects'):
     st.write('-------------------------------------------------------') 
 
 ######################## Internships ##################################
-if st.sidebar.button('iNTERNSHIPS'):
+if st.sidebar.button('INTERNSHIPS'):
     st.header("INTERNSHIPS")
     st.write('-------------------------------------------------------')
     st.markdown('## **Data Science**')
