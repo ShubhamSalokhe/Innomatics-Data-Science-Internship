@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Index
+{% endblock %}
+
+
+
+
+{% block content %}
+<body>
+    <style>
+        .button {
+            background-color: #6cad58;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        </style>
+    <br><br><br><br><br><br><br><br><br><br>
+    <center>
+    <form method='post' action="http://127.0.0.1:5000/">
+        <label for="url" style="font-family:'Courier New';font-size:30px">Enter an https://URL:</label>
+        <p>{{empty}}</p>
+        <input type='url' size = "50" name='in_1' placeholder='https://example.com' style="font-family:'Courier New';font-size:15px"><br>
+<br><br>
+<input type="Submit" value="URL Shortner"  class="button" size ="30" style="font-family:'Courier New';font: size 17px;px"></input>
+
+</form>
+</center>
+</body>
+{{ data }}
+{% endblock %}
